@@ -8,7 +8,7 @@ WhatsAsena - Yusuf Usta
 
 const chalk = require('chalk');
 const {WAConnection, MessageOptions, MessageType} = require('@adiwajshing/baileys');
-const {StringSession} = require('./julie/');
+const {StringSession} = require('./amazone/');
 const fs = require('fs');
 
 async function whatsAsena () {
@@ -29,11 +29,11 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     conn.on('open', async () => {
         var st = Session.createStringSession(conn.base64EncodedAuthInfo());
         console.log(
-            chalk.green.bold('Asena String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+            chalk.green.bold('N: '), Session.createStringSession(conn.base64EncodedAuthInfo())
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `NEUTRO_SESSION="${st}"`);
         }
         if (conn.user.jid.startsWith('90')) {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)

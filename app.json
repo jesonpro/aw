@@ -13,21 +13,21 @@
             "required": true
         },
         "SUDO": {
-            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 9478xxxxxxxxx (Sri lanka number +94)",
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot language. English => en,  Malayalam => ml, Indonesia => ID",
+            "description": "Bot language. English => en,  sinhala => si, Indonesia => ID",
             "required": true,
-            "value": "en"
+            "value": "si"
         },
-        "BGM_FILTER": {
-            "description": "If you likes bgm you can write 'true'. Otherwise false",
+        "BIO": {
+            "description": "Change Your live Bio",
             "required": false,
-            "value": "false"
+            "value": "ɪ ᴀᵐ ⁿᵒᵗ ᵖᵉʳᶠᵉᶜᵗ ʙᵘᵗ ɪ  ᴀᵐ ʟⁱᵐⁱᵗᵉᵈ ᴇᵈⁱᵗⁱᵒⁿ👀🔥"
         },
         "AUTO_STICKER": {
-            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "description": "If you likes Auto Sticker you can write 'true'. Otherwise false",
             "required": false,
             "value": "false"
          },
@@ -144,11 +144,6 @@
             "value": "default"
             
          },
-        "CHANGE_BGM_TO": {
-            "description": "Dont leave this blank choose the bgm you need - enter -angela- for talking angela - enter -Tom- for Talking tom",
-            "required": true,
-            "value": "angela"
-        },
         "DEMOTE_MESSAGE": {
             "description": "Demote Message! Use => default, to change back.",
             "required": false,
@@ -175,7 +170,7 @@
             "value": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg"
        },
         "MENU_LOGO": {
-            "description": "Alive message Photo.",
+            "description": "Menu message Photo.",
             "required": false,
             "value": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg"
         },

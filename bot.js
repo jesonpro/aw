@@ -648,11 +648,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     return await conn.sendMessage(conn.user.jid, '*🙇🏻Sorry, I Couldnt Read This Error!🙇🏻*' +
                                         '\n_You can write to our support groups for more help..._'
                                         , MessageType.text
-                              });
-                        }
-                    }
-                }
-            }
+                                    );
+                               }
+                          }
+                      }
+                  }
+               }  
+           }
         )
     });
 

@@ -4,8 +4,8 @@
     "logo": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg",
     "keywords": ["whatsapp", "userbot", "java", "button bot", "whatsapp", "api", "ai", "asena", "bug", "free rdp" ],
     "repository": "https://www.github.com/jesonpro/ales",
-    "website":   "wa",
-    "success_url": "https://www.github.com/jesonpro",
+    "website":   "https://t.me/Amazone_Neotrox_Support",
+    "success_url": "https://t.me/Amazone_Neotrox_Support",
     "stack": "container",
     "env": {
         "NEUTRO_SESSION": {

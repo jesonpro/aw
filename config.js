@@ -67,6 +67,10 @@ module.exports = {
     PKGPS: process.env.PKGPS === undefined ?'=xnxcom' : process.env.PKGPS,
     ADULT_MODE: process.env.ADULT_MODE === undefined ? 'on' : process.env.ADULT_MODE,
     AMAZONE: process.env.AMAZONE === undefined ? 'Amazone Alexa' : process.env.AMAZONE,
+    KTB: process.env.TAG_HEADER === undefined ? 'Amazone' : process.env.TAG_HEADER,
+    TB: process.env.TAG_HEADER === undefined ? '' : process.env.TAG_HEADER,
+    BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
+    ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),

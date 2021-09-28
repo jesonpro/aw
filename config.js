@@ -61,6 +61,7 @@ module.exports = {
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
     INBOX_BLOCK: process.env.INBOX_BLOCK === undefined ?'false' : process.env.INBOX_BLOCK,
     ANTI_BAD: process.env.ANTI_BAD === undefined ?'true' : process.env.ANTIBAD,
+    FULLALEXA: process.env.FULL_ALEXA === undefined ?'false' : process.env.FULL_ALEXA,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),

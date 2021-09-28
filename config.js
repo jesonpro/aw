@@ -71,6 +71,7 @@ module.exports = {
     TB: process.env.TAG_HEADER === undefined ? '' : process.env.TAG_HEADER,
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
+    BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),

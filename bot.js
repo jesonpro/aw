@@ -7,18 +7,29 @@ WhatsAsena - Yusuf Usta
 */
 
 const fs = require("fs");
+const os = require("os");
 const path = require("path");
+const Heroku = require('heroku-client');
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
+const simpleGit = require('simple-git');
+const git = simpleGit();
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./Amazone/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
 const got = require('got');
+const heroku = new Heroku({
+    token: config.HEROKU.API_KEY
+});
+let baseURI = '/apps/' + config.HEROKU.APP_NAME;
+const Language = require('./language');
+const Lang = Language.getString('updater');
 
-// Sql
+// =========SUPPORT END
+
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
     info: {
       type: DataTypes.STRING,

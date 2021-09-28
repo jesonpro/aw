@@ -56,4 +56,4 @@ Amazone.addCommand({ pattern: 'amazone ?(.*)', fromMe: true, desc: Lang.BR_DESC}
            })
       },
     )
-}
+

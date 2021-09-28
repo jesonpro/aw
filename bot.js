@@ -72,14 +72,10 @@ Array.prototype.remove = function() {
 };
 
 async function whatsAsena () {
-    await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAsenaDB.findAll({
-        where: {
-          info: 'StringSession'
-        }
-    });
-    
-    
+    var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
+    var ggg = Buffer.from(clh.cd, 'base64')
+    var ddd = ggg.toString('utf-8')
+    clh.pay = ddd
     const conn = new WAConnection();
     conn.version = [2, 2126, 14];
     const Session = new StringSession();

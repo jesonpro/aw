@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 NEOTROX - TEENUHX
 */
 
-const Asena = require('../events');
+const Neotro = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const fs = require('fs');

@@ -6,7 +6,7 @@ NEOTROX - TEENUHX API එකක් හරි උස්සලා තිබ්බ�
 
 const Asena = require('../events');
 const Config = require('../config');
-const Config = require('../hatzu');
+const config = require('../hatzu');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');

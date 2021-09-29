@@ -1,6 +1,5 @@
 /* Copyright (C) 2021 farhan-dqz
 coded for juliemwol
-*/
 
 const Julie = require('../events');
 const config = require('../config');
@@ -25,10 +24,10 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         STICKER_off = 'STICKER option turned off'
         P_dsc = 'turn on & off anti-badword To remove members when they use bad words'        
     }
-    if (config.LANG == 'ML') {
-        l_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'
-        Y_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'        
-        BGM_on = 'bgm ഓപ്ഷൻ ഓണാക്കി'
+    if (config.LANG == 'SI') {
+        l_dsc = 'ස්වයංක්‍රීය ස්ටිකර් පද්ධතිය.'
+        Y_dsc = 'කලින්ම ක්‍රියාත්මකයි'        
+        BGM_on = 'කලින්ම අක්‍රියයි'
         BGM_off = 'bgm ഓപ്ഷൻ ഓഫാക്കി'
         STICKER_on = 'STICKER option turned on!'
         STICKER_off = 'STICKER option turned off'
@@ -120,7 +119,7 @@ Julie.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your the
         });
         await message.sendMessage("THERI LIST UPDATED")
     }));
-
+*/
 
 
 

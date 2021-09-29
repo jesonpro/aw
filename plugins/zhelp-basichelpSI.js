@@ -10,7 +10,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'SI') {
 
 
-    Asena.addCommand({pattern: 'basichelp', fromMe: true, dontaddCommandList:true }, (async (message, match) => {
+    Asena.addCommand({pattern: 'basichelp', fromMe: true, dontAddCommandList:true}, (async (message, match) => {
             
             var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
        

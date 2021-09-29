@@ -68,7 +68,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: Lang.VINSTA }, 
 					
 }) /* pattern close*/
 
-Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true }, async (message, match) => {
+Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true, dontAddCommandList:true}, async (message, match) => {
 
     const link = match[1]
 
@@ -98,7 +98,7 @@ Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true }, async (message, matc
 					
 }) /* pattern close*/
 
-Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true }, async (message, match) => {
+Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true, dontAddCommandList:true }, async (message, match) => {
 
     const link = match[1]
 

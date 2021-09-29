@@ -26,6 +26,7 @@ const { MessageType, Mimetype, MessageOptions } = require('@adiwajshing/baileys'
 const Language = require('../language');
 const Lang = Language.getString('voicy');
 const conf = require('../config');
+const Config = require('../config');
 const axios = require('axios')
 const axiosdef = require("axios").default;
 const os = require('os')
@@ -64,7 +65,7 @@ const convertToWav = file => {
         .format('wav')
         .save('output.wav')
 }
- 
+ if (Config.FULL_ALEXA == 'true') {
 Neotro.addCommand({on: 'text', fromMe: false, dontAdCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('alexa') && conf.FULLALEXA !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]
@@ -173,7 +174,7 @@ Neotro.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mes
         }
 
 }));
-
+}
 //===============V===============
 //================V==============
 //==================V============

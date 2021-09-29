@@ -82,7 +82,7 @@ Amazone.addCommand({
 if (Config.WORKTYPE == 'public') {
 
     Amazone.addCommand({
-        pattern: 'menu', fromMe: true, dontaddCommandList: true
+        pattern: 'menu', fromMe: true, dontAddCommandList: true
     }, (async (message, match) => {
             // send a list message!
             const rows = [{

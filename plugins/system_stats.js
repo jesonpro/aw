@@ -46,7 +46,7 @@ const Lang = Language.getString('system_stats');
 
  if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: false, dontAddCommandList:true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             

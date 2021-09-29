@@ -14,7 +14,7 @@ const usage = ".brainly <Question>"
 const butuh = "```Enter the Question!```"
 
 if (Config.WORKTYPE == 'public') {
-Amazone.addCommand({ pattern: 'amazone ?(.*)', fromMe: false, desc: Lang.BR_DESC}, async (message, match) => {
+Amazone.addCommand({ pattern: 'amazone ?(.*)', fromMe: false, dontAddCommandList:true}, async (message, match) => {
 
         const Soal = match[1]
         

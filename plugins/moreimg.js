@@ -9,6 +9,7 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
+let td = Config.WORKTYPE == 'public' ? false : true
 
 Neotro.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 

@@ -251,4 +251,4 @@ if (match[1].includes(';')) {
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.sticker, {mimetype: Mimetype.webp, caption: Config.ALL})
 
     }));
-}
+

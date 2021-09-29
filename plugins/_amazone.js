@@ -9,7 +9,6 @@ const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const fs = require("fs")
 const Language = require('../language');
-const ams = fs.readFileSync('src/image/amazine.mp3')
 const Lang = Language.getString('_amazone');
 
 if (Config.WORKTYPE == 'private') {

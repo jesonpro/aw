@@ -7,7 +7,7 @@ NEOTROX - TEENUHX
 const fs = require('fs/promises')
 const path = require('path')
 const { MessageType } = require('@adiwajshing/baileys')
-const Asena = require('../events');
+const Neotro = require('../events');
 const { successfullMessage, errorMessage, infoMessage } = require('../helpers');
 const NotesDB = require('./sql/notes');
 const Language = require('../language')

@@ -183,7 +183,7 @@ Neotro.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mes
 //=====================V=========
 //======================V========
 
-Neotro.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAdCommandList: true, fromMe: wk }, (async (message, match) => {
+Neotro.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc, dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_tenu, MessageType.text, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({

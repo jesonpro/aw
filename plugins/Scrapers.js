@@ -787,7 +787,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    Neotro.addCommand({pattern: 'song ?(.*)', fromMe: false, dontAddCommandList:true}, (async (message, match) => { 
+    Neotro.addCommand({pattern: '1song ?(.*)', fromMe: false, dontAddCommandList:true}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SING,MessageType.text);    
         let arama = await yts(match[1]);

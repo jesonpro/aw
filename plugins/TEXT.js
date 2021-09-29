@@ -6,7 +6,8 @@ const Config = require('../config');
 const config = require('../hatzu');
 const NEED = "*🍭YOU MUST TYPE SOME WORDS*"
 const desc = "Text to image Pack";
-    
+let td = Config.WORKTYPE == 'public' ? false : true
+
 Neotro.addCommand({ pattern: 'wordgreen ?(.*)', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(NEED);

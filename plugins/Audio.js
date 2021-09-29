@@ -71,7 +71,7 @@ else if (Config.WORKTYPE == 'public') {
       },
     );
 	
-	amazone.addCommand({ pattern: 'audio ?(.*)', fromMe: false, desc: YTV_DESC,  deleteCommand: false}, async (message, match) => {
+	amazone.addCommand({ pattern: 'audio ?(.*)', fromMe: false, dontAddCommandList:true,  deleteCommand: false}, async (message, match) => {
 
         const link = match[1]
     

@@ -1,6 +1,11 @@
 
-🚀🚀🚀🚀🚀
-🚀🚀 ERROR FOUND 😬😬 01:10 Asia/srilanka
+🛡️Bugs Report 
+===============
+🧪Song Error Found 
+🧪Yt Erro Found 
+🧪Base Error Found 
+🧪Wallpaper Error Found
+🧪Bot Not Working
 
 <p align="center">
   <a href="https://github.com/jesonpro/whatsAlexa">

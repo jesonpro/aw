@@ -21,3 +21,13 @@ Neotro.addCommand({pattern: 'ehi ?(.*)', fromMe: true, dontAddCommandList: true}
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
       }));
+Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));

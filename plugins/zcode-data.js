@@ -4,8 +4,9 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
 const Language = require('../language');
+let tn = Config.WORKTYPE == 'public' ? false : true
 const XN_UP = "*Please Wait Little Bit Im Uploding Your Ehi⏱*"
-const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
+const DESC = "Free data( EHI ලැයිස්තුව)"
 const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
 const XN_D = "*Downloading Your EHI📑*"
 const TXN_D = "*💎Downloading Your APK*"
@@ -17,6 +18,8 @@ const DZ_D = "*🔴Downloading DIALOG Zoom EHI*"
 const HW_D = "*⚪Downloading HUTCH Whatsapp  EHI*"
 const HF_D = "*⚪Downloading HUTCH Facebook  EHI*"
 const HY_D = "*⚪Downloading HUTCH Youtube  EHI*"
+const MF_D = "*🔵Downloading MOBITEL  Facebook  EHI*"
+const MT_D = "*🔵Downloading MOBITEL  TWITTER   EHI*"
 
 Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
@@ -100,6 +103,31 @@ Neotro.addCommand({pattern: 'HFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
  }));
 //===========⚪⚪Youtube ===================================================================================
 Neotro.addCommand({pattern: 'HYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,HY_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));
+
+//===========🔵🔵MOBITEL ===================================================================================
+//===========🔵🔵Twitter ===================================================================================
+Neotro.addCommand({pattern: 'MTEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,HY_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));
+
+//===========🔵🔵FACEBOOK ===================================================================================
+Neotro.addCommand({pattern: 'MFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);

@@ -14,6 +14,9 @@ const DW_D = "*🔴Downloading DIALOG Whatsapp  EHI*"
 const DF_D = "*🔴Downloading DIALOG Facebook  EHI*"
 const DY_D = "*🔴Downloading DIALOG Youtube  EHI*"
 const DZ_D = "*🔴Downloading DIALOG Zoom EHI*"
+const HW_D = "*⚪Downloading HUTCH Whatsapp  EHI*"
+const HF_D = "*⚪Downloading HUTCH Facebook  EHI*"
+const HY_D = "*⚪Downloading HUTCH Youtube  EHI*"
 
 Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
@@ -74,7 +77,7 @@ Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
 //===========⚪⚪Whatsapp ===================================================================================
 
 Neotro.addCommand({pattern: 'HWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       await message.client.sendMessage(message.jid,HW_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
@@ -86,7 +89,7 @@ Neotro.addCommand({pattern: 'HWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
 
 //===========⚪⚪Facebook ===================================================================================
 Neotro.addCommand({pattern: 'HFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       await message.client.sendMessage(message.jid,HF_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
@@ -97,7 +100,7 @@ Neotro.addCommand({pattern: 'HFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
  }));
 //===========⚪⚪Youtube ===================================================================================
 Neotro.addCommand({pattern: 'HYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       await message.client.sendMessage(message.jid,HY_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})

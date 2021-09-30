@@ -43,36 +43,36 @@ Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
  //===========🔴🔴FACEBOOK ===================================================================================
 Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DF_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77693`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77695`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77697`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========🔴🔴YOUTUBE ===================================================================================
 Neotro.addCommand({pattern: 'DYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77701`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77702`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77705`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========🔴🔴ZOOM===================================================================================
 Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77707`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77708`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}77711`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 

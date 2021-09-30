@@ -15,7 +15,7 @@ const DF_D = "*🔴Downloading DIALOG Facebook  EHI*"
 const DY_D = "*🔴Downloading DIALOG Youtube  EHI*"
 const DZ_D = "*🔴Downloading DIALOG Zoom EHI*"
 
-Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
@@ -23,7 +23,7 @@ Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: true, dontAddCommandList: t
       }));
 //===========🔴🔴DIALOG===================================================================================
 //===========🔴🔴Whatsapp ===================================================================================
-Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DW_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
@@ -35,7 +35,7 @@ Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: true, dontAddCommandList: tru
  }));
 
  //===========🔴🔴FACEBOOK ===================================================================================
-Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DF_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
@@ -47,7 +47,7 @@ Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: true, dontAddCommandList: tru
  }));
 
 //===========🔴🔴YOUTUBE ===================================================================================
-Neotro.addCommand({pattern: 'DYEHI ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'DYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DY_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
@@ -59,7 +59,44 @@ Neotro.addCommand({pattern: 'DYEHI ?(.*)', fromMe: true, dontAddCommandList: tru
  }));
 
 //===========🔴🔴ZOOM===================================================================================
-Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));
+
+//===========⚪⚪HUTCH===================================================================================
+//===========⚪⚪Whatsapp ===================================================================================
+
+Neotro.addCommand({pattern: 'HWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));
+
+//===========⚪⚪Facebook ===================================================================================
+Neotro.addCommand({pattern: 'HFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
+ }));
+//===========⚪⚪Youtube ===================================================================================
+Neotro.addCommand({pattern: 'HYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
        var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);

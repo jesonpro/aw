@@ -21,12 +21,12 @@ let tn = Config.WORKTYPE == 'public' ? false : true
 Alexa.addCommand({pattern: 'freedata', fromMe: tn, desc:Lang.DATA}, (async (message, match) => {
 
     const buttons = [
-        {buttonId: '', buttonText: {displayText: ''}, type: 1},
-        {buttonId: '', buttonText: {displayText: ''}, type: 1},
-        {buttonId: '', buttonText: {displayText: ''}, type: 1},
-        {buttonId: '', buttonText: {displayText: ''}, type: 1},
-        {buttonId: '', buttonText: {displayText: ''}, type: 1},
-        {buttonId: '', buttonText: {displayText: ''}, type: 1}
+        {buttonId: '', buttonText: {displayText: '⚙️සැකසුම්'}, type: 1},
+        {buttonId: '', buttonText: {displayText: '🔴DIALOG EHI'}, type: 1},
+        {buttonId: '', buttonText: {displayText: '🔵MOBITEL EHI'}, type: 1},
+        {buttonId: '', buttonText: {displayText: '⚪HUTCH EHI'}, type: 1},
+        {buttonId: '', buttonText: {displayText: '🔅ALL PACKAGE EHI🔅'}, type: 1},
+        {buttonId: '', buttonText: {displayText: '💰SSH ACCOUNT'}, type: 1}
       ]
       
       const buttonMessage = {

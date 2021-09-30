@@ -1,4 +1,8 @@
-
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
+*/
 
 const Alexa = require('../events');
 const {MessageType, GroupSettingChange, prepareMessageFromContent,Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -7,11 +11,14 @@ const Config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
+const Language = require('../language');
+const Lang = Language.getString('amazone');
 var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
+let tn = Config.WORKTYPE == 'public' ? false : true
 
-Alexa.addCommand({pattern: 'freedata', fromMe: true, desc:Lang.DATA}, (async (message, match) => {
+Alexa.addCommand({pattern: 'freedata', fromMe: tn, desc:Lang.DATA}, (async (message, match) => {
 
     const buttons = [
         {buttonId: '', buttonText: {displayText: ''}, type: 1},

@@ -183,6 +183,11 @@
             "description": "Activate AI SIM chat bot",
             "required": false,
             "value": "true"
+       },
+        "ADULT_MODE": {
+            "description": "YOU CAN USE on or off",
+            "required": false,
+            "value": "off"
         },
         "AFK_MESSAGE": {
             "description": "Customizable AFK Message! Use => default, to change back.",

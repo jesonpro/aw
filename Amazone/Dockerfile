@@ -4,5 +4,5 @@ RUN git clone https://github.com/jesonpro/aw /root/teenu
 WORKDIR /root/teenu/
 RUN yarn install --no-audit
 RUN git clone https://github.com/jesonpro/Angela-x
-RUN cp -R /root/Utils/* /root/WhatsAsenaDuplicated 
+RUN cp -R /root/Utils/* /root/teenu 
 CMD ["node", "bot.js"]

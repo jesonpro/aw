@@ -31,10 +31,15 @@
             "required": false,
             "value": "false"
          },
-        "AUTO_VIDEO": {
-            "description": "If you likes video you can write 'true'. Otherwise false",
+        "SONGD": {
+            "description": "Customizable Song Download message",
             "required": false,
-            "value": "false"   
+            "value": "*◦•●◉Downloading Your Song◉●•◦*"
+        },
+        "SONGU": {
+            "description": "Customizable Song upload message",
+            "required": false,
+            "value": "*◦•●◉✿Uploading Your Song✿◉●•◦*"
         },
         "AUTO_BIO": {
             "description": "Set true for auto date, time in biography.",
@@ -42,7 +47,7 @@
             "value": "false"
         },
         "HANDLERS": {
-            "description": "Komutlar için. For commands.",
+            "description": " For commands.",
             "required": true,
             "value": "^[.!;]"
         },

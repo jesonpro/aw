@@ -9,7 +9,7 @@ const capt = "🦹‍♀️Amazone Tiktok Downloader* 🕊\n"
 
 if (Config.WORKTYPE == 'public') {
 	
-Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk}, async (message, match) => {
+Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: false, desc: ALang.TIKTOk}, async (message, match) => {
 
     const link = match[1]
 
@@ -38,7 +38,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk}, asy
 					
 }) //pattern close
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, dontAddCommandList:true}, async (message, match) => {
+  Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, dontAddCommandList:true}, async (message, match) => {
 
     const link = match[1]
 
@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk}, asy
 
 else if (Config.WORKTYPE == 'private') {
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, dontaddCommandList:false}, async (message, match) => {
+  Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, dontaddCommandList:false}, async (message, match) => {
 
     const link = match[1]
 

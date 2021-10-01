@@ -31,12 +31,12 @@ Neotro.addCommand({pattern: 'newslist', fromMe: true, dontAddCommandList:true}, 
 
 }));
 
-Neotro.addCommand({pattern: 'moretxt', fromMe: fs, desc: 'More text Logo commands'}, (async (message, match) => {
+Neotro.addCommand({pattern: 'moretxt', fromMe: fs, desc: 'more text img commands}, (async (message, match) => {
   await message.sendMessage('*<=====👩‍🦰Amazone MORE LOGO pack===>*\n\n🐼command : .break\n🦋desc : change your text to wall breaking image.\n\n🐼command : .phub\n🦋desc : change your text into pornhub logo.\n🏷️example : .phuh BOT;X.\n\n🐼command : .blood\n🦋desc : change your text frozen blood on a glass\n\n🐼command : .1917\n🦋desc : change your text to a 1917 model image\n\n🐼command : .avengers\n🦋desc : change your text to avangers logo\n🏷️example : .avengers its;BOT X.\n\n🐼command : .boxed\n🦋desc : change your text to 3d boxed design\n\n🐼command : .window\n🦋desc : write your text on a foggy window \n\n🐼command : .skywal\n🦋desc : random sky wallpaper with given text\n\n🐼command : .holo\n🦋desc : change your text to holo design\n\n🐼command : .drop\n🦋desc : change your text into rain water drop.n\n🐼command : .flame\n🦋desc : text with fire effect.\n\n🐼command : .vtext\n🦋desc : text to video.\n\n🐼command : .ptext\n🦋desc : text to video.\n\n🐼command : .colortext\n🦋desc : text to colorfull video\n\n🐼command : .cloud\n🦋desc : text on cloud\n\n🐼command : .2ninja\n🦋desc : random ninja logo with given name.');
   
 }));
 
-Neotro.addCommand({pattern: 'stlist', fromMe: fs, desc: 'More text Logo commands'}, (async (message, match) => {
+Neotro.addCommand({pattern: 'stlist', fromMe: fs, desc: TT}, (async (message, match) => {
   await message.sendMessage('*╭─「 AMAZONE SUPER TTP 」*\n│ \n│🧚‍♂Amazone Alexa Super TTP pack)\n│ සිංහල Font Support 😍\n╰────\n╭─「 COMMANDS」\n│ \n│ • 1ttp <your Text >\n│ • 2ttp <your Text >\n│ • 3ttp <your Text >\n「 ©️Amazone-teenuhx」');
   
 }));

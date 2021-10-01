@@ -23,7 +23,7 @@ const MT_D = "*🔵Downloading MOBITEL  TWITTER   EHI*"
 
 Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77489`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`${Config.ASITE}78085`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));

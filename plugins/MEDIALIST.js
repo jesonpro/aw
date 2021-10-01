@@ -37,6 +37,6 @@ Neotro.addCommand({pattern: 'moretxt', fromMe: fs, desc: 'More text Logo command
 }));
 
 Neotro.addCommand({pattern: 'stlist', fromMe: fs, desc: 'More text Logo commands'}, (async (message, match) => {
-  await message.sendMessage('*╭─「 AMAZONE SUPER TTP 」*\n│ \n│🧚‍♂Amazone Alexa Super TTP pack)\n│ සිංහල Font Support 😍\n╰────\n╭─「 COMMANDS」\n│ \n│ • 1ttp <your Text >\n│ • 2ttp <your Text >\n│ • 3ttp <your Text >\n│ • 4ttp <your Text >\n│ • 5ttp <your Text >\n│ • 6ttp <your Text >\n│ • 7ttp <your Text >\n│ • 8ttp <your Text >\n│ • 9ttp <your Text >\n│ • 01ttp <your Text >\n│ • 02ttp <your Text >\n│ • 03ttp <your Text >\n│ • 04ttp <your Text >\n│ • 05ttp <your Text >\n╰────\n「 ©️Amazone-teenuhx」');
+  await message.sendMessage('*╭─「 AMAZONE SUPER TTP 」*\n│ \n│🧚‍♂Amazone Alexa Super TTP pack)\n│ සිංහල Font Support 😍\n╰────\n╭─「 COMMANDS」\n│ \n│ • 1ttp <your Text >\n│ • 2ttp <your Text >\n│ • 3ttp <your Text >\n「 ©️Amazone-teenuhx」');
   
 }));

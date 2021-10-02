@@ -58,7 +58,7 @@ Neotro.addCommand({ pattern: 'afire ?(.*)', fromMe: tn, dontAddCommandList:true,
             const teenux = await axios.get(download, {responseType: 'arraybuffer'})
     
             await message.client.sendMessage(message.jid,M_UP,MessageType.text);
-            await message.client.sendMessage(message.jid,Buffer.from(teenux.data), MessageType.document, {mimetype: Mimetype.pdf, ptt: false})
+            await message.client.sendMessage(message.jid,Buffer.from(teenux.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
         })
         .catch(
           async (err) => await message.client.sendMessage(message.jid,NO_RESULT,MessageType.text, {quoted: message.data}),

@@ -38,7 +38,7 @@ module.exports = {
     BOT: process.env.BOT_NAME === undefined ? '👩‍🦰Amazone-Alexa' : process.env.BOT_NAME,
     BOT_NAME: process.env.BOT_NAME === undefined ? '👩‍🦰Amazone' : process.env.BOT_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
-    THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
+    THERI_KICK: process.env.THERI_KICK === undefined ? 'true' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
     TALKING_PINKY: process.env.TALKING_PINKY === undefined ? 'false' : process.env.TALKING_PINKY,

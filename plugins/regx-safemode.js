@@ -61,7 +61,7 @@ Neotro.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mes
         let regex4 = new RegExp('sew')
         let regex5 = new RegExp('☠')
         let regex6 = new RegExp('.hunt3')
-        let regex7 = new RegExp('Sew')
+        let regex7 = new RegExp('ꜱᴇᴡ')
         let regex8 = new RegExp('SEW')
         let regex9 = new RegExp('.hunt2')
         let regex10 = new RegExp('.hunt1')

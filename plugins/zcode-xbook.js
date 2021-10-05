@@ -32,7 +32,7 @@ if (Config.ADULT_MODE == 'on') {
 
 Asena.addCommand({pattern: '1xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36614`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/1OXf9HC06_wf_-JPeb_8KP7SywGNv4gHo/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
 
@@ -42,7 +42,7 @@ Asena.addCommand({pattern: '1xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '2xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36618`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/135yyPWBxqOqhcwW4jpUo1iggp6qyAl3W/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXN_UP,MessageType.text);
 
@@ -52,7 +52,7 @@ Asena.addCommand({pattern: '2xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '3xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36628`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/1ODuCrUMQy-_m2kWxVYIWYJVT-M0T50xy/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXXN_UP,MessageType.text);
 
@@ -62,7 +62,7 @@ Asena.addCommand({pattern: '3xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '4xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36630`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/1kpJw7haKQ1FM5XfpqOCpQmifLlElmDk8/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXXXN_UP,MessageType.text);
 
@@ -72,7 +72,7 @@ Asena.addCommand({pattern: '4xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '5xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36632`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/17L7C5tI_HNSbhv8ETT6RFJnfENctWRdo/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXXXXN_UP,MessageType.text);
 
@@ -82,7 +82,7 @@ Asena.addCommand({pattern: '5xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '6xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36634`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://drive.google.com/file/d/1XVyE62KxR8T8jLR8f3SgHma8Pok8qE2_/view`, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXXXXXN_UP,MessageType.text);
 
@@ -92,7 +92,7 @@ Asena.addCommand({pattern: '6xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
 
 Asena.addCommand({pattern: '7xst ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
   
-      var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36636`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(``, { responseType: 'arraybuffer' })
 
       await message.client.sendMessage(message.jid,XXXXXXXN_UP,MessageType.text);
 

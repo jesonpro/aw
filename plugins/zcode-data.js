@@ -3,6 +3,7 @@ const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
+const tenu = require('../hatzu');
 const Language = require('../language');
 let tn = Config.WORKTYPE == 'public' ? false : true
 const XN_UP = "*Please Wait Little Bit Im Uploding Your Ehi⏱*"
@@ -23,56 +24,56 @@ const MT_D = "*🔵Downloading MOBITEL  TWITTER   EHI*"
 
 Neotro.addCommand({pattern: 'apkhttp ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,TXN_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}78085`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}11tZut6v6qNYUpAGup-YTbdO7ozlxJWIs/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,TXN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/vnd.android.package-archive', quoted: message.data})
       }));
 //===========🔴🔴DIALOG===================================================================================
 //===========🔴🔴Whatsapp ===================================================================================
-Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,DW_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77685`, { responseType: 'arraybuffer' })
+Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DF_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1Q8JbTeO4hK7YA2EAab90mkhbVK-sR6Ku/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77686`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1Ygl1OAv8S2-uTGnV7ltCrSMHTn_EkWgc/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77689`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1rgTr2_g3DTn9GpY1gLRkeR7jLycViSwq/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
  //===========🔴🔴FACEBOOK ===================================================================================
-Neotro.addCommand({pattern: 'DFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
-       await message.client.sendMessage(message.jid,DF_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77693`, { responseType: 'arraybuffer' })
+Neotro.addCommand({pattern: 'DWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
+       await message.client.sendMessage(message.jid,DW_D,MessageType.text);
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1IMN0f--iSeYFAMhoap9ppt8CH0vkbleB/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77695`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1lGjvRSEi--dj6Ga1AaH9j1_TMtOY4g8t/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77697`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1sB1LILop-1hWxTCl-IvjCPYdUm3Xf1SE/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========🔴🔴YOUTUBE ===================================================================================
 Neotro.addCommand({pattern: 'DYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77701`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1VRoNMxDMkcefdZVrBqvsBD3OQDFh6Rlk/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77702`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1UD9BignmA8Wb28dQe5wyH40RL8AraBc-/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77705`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1fehOc4BHnLiLk8p3wObJqpN3dZzSJLQ0/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========🔴🔴ZOOM===================================================================================
 Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,DZ_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77707`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1ZFxG_r8s3IOM7Rop8u7h4m1ENKHxM4Gq/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77708`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1E6yxmUX1934gfKjp8RGZ8dhbd3gzvYoh/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77711`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1MfoPvSA0KCL7F0yPfopNXmz19kezy190/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
@@ -81,35 +82,35 @@ Neotro.addCommand({pattern: 'DZEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
 
 Neotro.addCommand({pattern: 'HWEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HW_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77713`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1lYzOBKF95CiRSFQkgSFfx4a3E-2mmjl-/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77714`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}13YkOyiG5TTHD3K05jtB5or9C1DKUZkKN/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77715`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1VRoNMxDMkcefdZVrBqvsBD3OQDFh6Rlk/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========⚪⚪Facebook ===================================================================================
 Neotro.addCommand({pattern: 'HFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HF_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77719`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1AiNs81Bey4u5y_XLskpQi1LGS3JgcJzv/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77720`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1VkZwiJU6qrpAa5-fMUEiL9FnmLd6vJ6Q/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77723`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1Opq-8-7UfqeWsg_q5B-dx58LGK64vOCo/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 //===========⚪⚪Youtube ===================================================================================
 Neotro.addCommand({pattern: 'HYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77725`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1ZoSLLlqTAclWxGtgF8tQ9_9h7sm0CPLt/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77726`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1DyMPc80oR3SNLrqLBIrCaj2N555CRvAF/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77729`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1wQdfMYlj_M6RY1OEbkAFsQdUJEFUhZV3/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
@@ -117,24 +118,24 @@ Neotro.addCommand({pattern: 'HYEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
 //===========🔵🔵Twitter ===================================================================================
 Neotro.addCommand({pattern: 'MTEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77733`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1EJgeuH76Shy1zH2x_VD9eRUxCSVneMzE/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77734`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1UKe9cmEOXar0-H7oEU2vpmxtEIPr6i4H/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77737`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1L5_Vs3tgHHCJzpM1W_a5buHjrkC2Do7F/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
 //===========🔵🔵FACEBOOK ===================================================================================
 Neotro.addCommand({pattern: 'MFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77739`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1nmCu6d3zNqtQiPRCH1I9IaGLW3vdkYjR/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77740`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1w6RvAnxMOeG7FAF8hUJSzcdxKJyD1uF2/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77743`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1OpE-Nq7cHpI6eZKdHC4O__FQkk_hhdeh/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 
@@ -142,12 +143,12 @@ Neotro.addCommand({pattern: 'MFEHI ?(.*)', fromMe: tn, dontAddCommandList: true}
 //===========🔴⚪🔵ALL Whatsapp ===================================================================================
 Neotro.addCommand({pattern: 'allwehi ?(.*)', fromMe: tn, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,HY_D,MessageType.text);
-       var webimage = await axios.get(`${Config.ASITE}77745`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1xZCSOyij1dhj5GD4yOHJuE1WJ2lvzGye/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,XN_UP,MessageType.text);
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77746`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}11OpOzQivKK6Ju5IplTxAbquHGqSbanOa/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
-       var webimage = await axios.get(`${Config.ASITE}77749`, { responseType: 'arraybuffer' })
+       var webimage = await axios.get(`https${tenu.DRIVECOM}1SmR---p_FANc-w-es_G8ozgecCeQqk-D/view`, { responseType: 'arraybuffer' })
        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: 'application/octet-stream', quoted: message.data})
  }));
 

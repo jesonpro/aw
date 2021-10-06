@@ -62,7 +62,7 @@ Asena.addCommand({pattern: 'pkg ?(.*)', fromMe: true, desc: ALang.PKG, warn: Lan
 
         await Db.installPlugin(url, plugin_name);
         await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
-        if (!match[1].includes('=xnxcom')) {
+        if (!match[1].includes('paste-bin.xyz')) {
             await new Promise(r => setTimeout(r, 400));
             await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
         }

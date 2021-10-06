@@ -1,3 +1,9 @@
+/* Copyright (C) 2021 RAMIYA-ALEXA TEAM.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+ALEXA TEAM - RAMIYA
+*/
+
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const sql = require('./sql/greetings');

@@ -335,7 +335,16 @@ if (config.WORKTYPE == 'private') {
                 var tsts = match[1].replace('watch?v=', '')
                 var alal = tsts.split('/')[3]
                 VID = alal
-            } else {     
+            } 
+            // ----- Shorts Download Created by RAMIYA YT -----
+            if (match[1].includes('shorts')) {
+                var rmx = match[1].replace('shorts/', '')
+				var rmy = rmx.replace('?feature=share', '')
+                var data = rmy.split('/')[3]
+                VID = data
+            }
+            //උස්සන්නද ආවේ 😅 තනියම හදාගන්න බැරි නම් ඔය bot ලමයෙක්ට දිපන්. Alexa තමයි හොදටම කරේ.
+            else {     
                 VID = match[1].split('/')[3]
             }
         } catch {
@@ -348,7 +357,7 @@ if (config.WORKTYPE == 'private') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, ptt: false, quoted: message.data});
         });
     }));
 
@@ -759,7 +768,16 @@ else if (config.WORKTYPE == 'public') {
                 var tsts = match[1].replace('watch?v=', '')
                 var alal = tsts.split('/')[3]
                 VID = alal
-            } else {     
+            } 
+            // ----- Shorts Download Created by RAMIYA YT -----
+            if (match[1].includes('shorts')) {  
+                var rmx = match[1].replace('shorts/', '')
+				var rmy = rmx.replace('?feature=share', '')
+                var data = rmy.split('/')[3]
+                VID = data
+            } 
+            //උස්සන්නද ආවේ 😅 තනියම හදාගන්න බැරි නම් ඔය bot ලමයෙක්ට දිපන්. Alexa තමයි හොදටම කරේ.
+            else {     
                 VID = match[1].split('/')[3]
             }
         } catch {
@@ -773,7 +791,7 @@ else if (config.WORKTYPE == 'public') {
             },
             message: {
               "extendedTextMessage": {
-                "text": "*Dowloading*"
+                "text": "*Downloading*"
               }
             }
         }
@@ -783,7 +801,7 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, ptt: false, quoted: message.data});
         });
     }));
 

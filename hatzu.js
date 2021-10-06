@@ -43,7 +43,7 @@ module.exports = {
     LOCKA: process.env.LOCKA === undefined ?'Ikyy69' : process.env.LOCKA,
     LOCKH: process.env.LOCKH === undefined ?'https://' : process.env.LOCKH,
     LOCKHU: process.env.LOCKHU === undefined ?'hunter' : process.env.LOCKHU,
-    TAPI5: process.env.TAPI5 === undefined ?'TEENUU4' : process.env.TAPI,
+    DRIVECOM: process.env.DRIVECOM === undefined ?'://drive.google.com/' : process.env.DRIVECOM,
     TAPI6: process.env.TAPI6 === undefined ?'TEENUU5' : process.env.TAPI,
     TAPI7: process.env.TAPI7 === undefined ?'TEENUU6' : process.env.TAPI,
     TAPI8: process.env.TAPI8 === undefined ?'TEENUU7' : process.env.TAPI,

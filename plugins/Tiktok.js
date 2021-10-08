@@ -5,7 +5,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 const ALang = Language.getString('amazone');
-const capt = "🦹‍♀️Amazone Tiktok Downloader* 🕊\n"
+const capt = "🦹‍♀️ *Amazone Tiktok Downloader* 🕊\n"
 
 if (Config.WORKTYPE == 'public') {
 	

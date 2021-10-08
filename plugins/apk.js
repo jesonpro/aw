@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
 */
-
+/*
 const Julie = require('../events');
 const axios = require('axios');
 const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -289,3 +289,4 @@ Julie.addCommand({pattern: 'capcut', fromMe: false, dontAddCommandList: true}, (
       await message.sendMessage('💎 *WHATSAPP PLUS* 💎\nmhatsapp mod.\n📌 bit.ly/drkWaPlus');
    }));
 }
+*/

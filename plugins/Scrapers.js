@@ -372,9 +372,9 @@ if (config.WORKTYPE == 'private') {
             return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
         }
     
-        var mesaj = '';
+        var mesaj = '👩‍🦰 *Amazone Alexa YT SEARCH* 🚀\n\n ';
         arama.all.map((video) => {
-            mesaj += '*' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🦹 ' + video.title + '* - \n⏰ Duration :- ' + video.duration + '\n' + video.url +'\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -817,9 +817,9 @@ Neotro.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (asy
             return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
         }
     
-        var mesaj = '';
+        var mesaj = '👩‍🦰 *Amazone Alexa YT SEARCH* 🚀\n\n ';
         arama.all.map((video) => {
-            mesaj += '*' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🦹 ' + video.title + '* - \n⏰ Duration :- ' + video.duration + '\n' + video.url +'\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);

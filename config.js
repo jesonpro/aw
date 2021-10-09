@@ -68,7 +68,7 @@ module.exports = {
     AMAZONE: process.env.AMAZONE === undefined ? 'Amazone Alexa' : process.env.AMAZONE,
     KTB: process.env.TAG_HEADER === undefined ? 'Amazone' : process.env.TAG_HEADER,
     BIO: process.env.BIO === undefined ? 'ɪ ᴀᵐ ⁿᵒᵗ ᵖᵉʳᶠᵉᶜᵗ ʙᵘᵗ ɪ  ᴀᵐ ʟⁱᵐⁱᵗᵉᵈ ᴇᵈⁱᵗⁱᵒⁿ👀🔥' : process.env.BIO,
-    BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
+    ANTI_BAD: process.env.ANTI_BAD === undefined ? 'false' : process.env.ANTI_BAD,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     SITE: process.env.SITE === undefined ?'netfiletolink.herokuapp.com/' : process.env.SITE,

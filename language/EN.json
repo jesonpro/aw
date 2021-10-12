@@ -596,6 +596,7 @@
             "BOT": ":",
             "SONG": "Download song as document",
             "TIKTOK": "Download tik tok video",
+	    "FBDOWN": "Download Facebook video",
             "DEVICE": "Check device details",
             "DATA": "Get Ehi list",
             "E": "👩‍🦰",

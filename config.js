@@ -72,6 +72,8 @@ module.exports = {
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     SITE: process.env.SITE === undefined ?'netfiletolink.herokuapp.com/' : process.env.SITE,
+    FBS1: process.env.FBS1 === undefined ?'https://dapuhy-api.herokuapp.com/api/' : process.env.FBS1,
+    FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
     ASITE: process.env.ASITE === undefined ?'https://netfiletolink.herokuapp.com/' : process.env.ASITE,
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
     BRANCH: 'master',
@@ -90,5 +92,6 @@ module.exports = {
     SUPPORT: "9",
     SUPPORT2: "9",
     SUPPORT3: "9",
+    FBAPI : 'OSuDZukzPWE49ro',
     SUPPORT4: "9"
 };

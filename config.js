@@ -74,6 +74,8 @@ module.exports = {
     SITE: process.env.SITE === undefined ?'netfiletolink.herokuapp.com/' : process.env.SITE,
     FBS1: process.env.FBS1 === undefined ?'https://dapuhy-api.herokuapp.com/api/' : process.env.FBS1,
     FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
+    VID1: process.env.VID1 === undefined ?'https://zenzapi.xyz/api/downloader/' : process.env.VID1,
+    VID2: process.env.VID2 === undefined ?'RDMMiI1VlXspMp8&index=2' : process.env.VID2,
     ASITE: process.env.ASITE === undefined ?'https://netfiletolink.herokuapp.com/' : process.env.ASITE,
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
     BRANCH: 'master',
@@ -93,5 +95,6 @@ module.exports = {
     SUPPORT2: "9",
     SUPPORT3: "9",
     FBAPI : 'OSuDZukzPWE49ro',
+    VIDAPI: '5c3ceca04a58',
     SUPPORT4: "9"
 };

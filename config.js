@@ -95,6 +95,6 @@ module.exports = {
     SUPPORT2: "9",
     SUPPORT3: "9",
     FBAPI : 'OSuDZukzPWE49ro',
-    VIDAPI: '5c3ceca04a58',
+    VIDAPI: 'ramiya',
     SUPPORT4: "9"
 };

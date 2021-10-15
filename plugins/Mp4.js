@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
         if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
+          .get(`https://hardianto-chan.herokuapp.com/api/download/ytdownload?url=${link}&apikey=hardianto}`)
           .then(async (response) => {
             const {
               link,
@@ -50,10 +50,10 @@ else if (Config.WORKTYPE == 'public') {
 
         const link = match[1]
     
-        if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text, {quoted: message.data})
-         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text)
+        if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
+        await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
+          .get(`https://hardianto-chan.herokuapp.com/api/download/ytdownload?url=${link}&apikey=hardianto}`)
           .then(async (response) => {
             const {
               link,

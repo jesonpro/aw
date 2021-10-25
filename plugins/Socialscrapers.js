@@ -4,6 +4,7 @@ const axios = require('axios');
 const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('amazone');
+const ALang = Language.getString('scrapers');
 const capt = "🎭 *NeotroX* 🕊"
 
 if (Config.WORKTYPE == 'public') {
@@ -14,7 +15,7 @@ Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: Lang.PINSTA}, a
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Photo* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
@@ -44,7 +45,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: Lang.VINSTA }, 
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Video* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
@@ -74,7 +75,7 @@ Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true, dontAddCommandList:tru
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Photo* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
@@ -104,7 +105,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true, dontAddCommandList:tru
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Video* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
@@ -138,7 +139,7 @@ else if (Config.WORKTYPE == 'private') {
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Photo* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
@@ -168,7 +169,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true, desc: Lang.VINSTA }, a
 
     if (!link) return await message.sendMessage(" *Give Vaild Insta Link That Includes Video* ")
 
-    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+Lang.DOWNLOADING_VIDEO)
+    await message.sendMessage('👻 *Insta Downloader* 🕊 \n'+ALang.DOWNLOADING_VIDEO)
 
 				await axios
 					.get(`https://bx-hunter.herokuapp.com/api/igdownload?url=${link}&apikey=Ikyy69`)
